@@ -1,0 +1,299 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+*::selection{
+    background-color: #000;
+    color: #fff;
+}
+body{
+    position: relative;
+    font-family: "gilroy";
+    background-color: #E5302E;
+    overflow-x: hidden;
+}
+
+.nav{
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25vw;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    color: #fff;
+}
+
+.nav .left-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+}
+
+.nav .right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/image//image1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#page1 .p-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p-header h1{
+    background-color: #000;
+    color: #fff;
+    padding: 1vw 2vw;
+} 
+
+
+.p-header i{
+    color: red;
+    margin-left: 1vw;
+}
+
+#page1 .center{
+    height: 80vh;
+    width: 40vw;
+    margin-top: 5vw;
+    margin-left: 8vw;
+}
+
+.center h1{
+    font-size: 8vw;
+    font-size: 100;
+    color: #fff;
+    font-family: Chakra Petch;
+}
+
+#page2{
+    width: 100%;
+    height: 70vh;
+    display: flex ;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+#page2 h2{
+    margin-left: 7vw;
+    font-size: 2vw;
+}
+
+#page2 p{
+    margin-right: 7vw;
+    font-size: 1vw;
+}
+
+#page2 h1{
+    color: #fff;
+   flex-wrap: nowrap;
+   margin: 5%;
+}
+
+#page3{
+    width: 100%;
+    min-height: 150vh;
+    position: relative;
+}
+
+#page3 .video-container{
+    width: 80%;
+    height: 80%;
+    /* margin-top: 9vw; */
+    margin-left: 8vw;
+}
+
+.video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+#page3 h1{
+    font-size: 5vw;
+    color: #fff;
+    font-family: Chakra Petch;
+    margin-left: 8vw;
+}
+
+#page3 h4{
+    font-size: 28vw;
+    color: #fff;
+    font-family: Chakra Petch;
+    margin-left: 8vw;
+    position: absolute;
+    top: 60%;
+}
+
+#page4{
+    width: 100%;
+    /* padding: 5vw 8vw; */
+    margin-top: 4vw;
+}
+
+
+#page4 h1{
+    font-size: 6vw;
+    margin-left: 8vw;
+    font-family: Chakra Petch;
+    transition: all ease 1s;
+}
+
+#picture{
+    width: 100%;
+    padding: 8vw;
+    display: flex;
+    gap: 4vw;
+    background-color: #000;
+}
+
+#picture .pic{
+    width: 28%;
+    height: 65vh;
+}
+
+#picture #img2{
+    width: 37%;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.web{
+     width: 100%;
+    background-color: #000;
+    padding: 5vw 8vw;
+}
+
+
+.web h1{
+    font-size: 5vw;
+    margin-top: 1vw;
+    font-family: Chakra Petch;
+    color: #fff;
+
+}
+
+.web h1::selection{
+    background-color: #E5302E;
+    color: #000;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 50vh;
+    padding: 5vw 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #010101;
+    border-top: 1px solid #fff;
+}
+
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+    color: #fff;
+	font-size: 1.3vw;
+	text-transform: capitalize;
+	margin-bottom: 2vw;
+	font-weight: 500;    
+    font-family: "pp mori";
+	position: relative;
+    cursor: none;
+}
+
+
+.footer-col  a {
+	color: #fff;
+	display: block;
+	font-size: 1vw;
+    cursor: none;
+    margin-bottom: .5vw;
+	font-weight: 100;
+    opacity: .8;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col a:hover {
+	padding-left: 10px;
+}
+
+.social-links i {
+    background-color: #000;
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+    text-align: center;
+    padding-top: .8vw;
+    font-size: 1.5vw;
+    transition: all 0.5s ease;
+    cursor: none;
+}
+ .social-links i:hover {
+	background-color: #fff;
+	color: #151515;
+}
+
+
+
+
+@media (max-width:600px) {
+    .nav{
+        padding: 2vw;
+        top: 0;
+    }
+
+    #page1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/image//image1.jpg);
+    background-position: 60% 0 ;
+    background-size: cover;
+}
+
+#page1 .p-header{
+    width: 100%;
+    display: none;
+}
+
+
+}
