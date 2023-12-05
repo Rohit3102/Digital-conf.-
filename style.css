@@ -216,8 +216,6 @@ footer{
     padding: 5vw 10vw;
     display: flex;
     flex-wrap: wrap;
-    background-color: #010101;
-    border-top: 1px solid #fff;
 }
 
 
@@ -256,8 +254,8 @@ footer{
 }
 
 .social-links i {
-    background-color: #000;
-	color: rgb(255, 255, 255);
+    background-color: #ecdfdf;
+	color: rgb(16, 15, 15);
 	display: inline-block;
 	height: 50px;
 	width: 50px;
@@ -269,31 +267,119 @@ footer{
     cursor: none;
 }
  .social-links i:hover {
-	background-color: #fff;
-	color: #151515;
+	background-color: rgb(15, 14, 14);
+	color: #e4dfdf;
 }
 
-
+h3{
+    padding: 2vw 0;
+    text-align: center;
+    color: #fff;
+}
 
 
 @media (max-width:600px) {
-    .nav{
-        padding: 2vw;
-        top: 0;
-    }
+    
+.nav{
+    padding: 0 2vw;
+}
 
-    #page1{
-    width: 100%;
-    height: 100vh;
-    background-image: url(/image//image1.jpg);
-    background-position: 60% 0 ;
-    background-size: cover;
+#page1{
+    background-position: 60% 10%;
 }
 
 #page1 .p-header{
-    width: 100%;
-    display: none;
+    display: flex;
 }
 
+.p-header h1{
+ display: none;
+} 
+
+#page1 .center{
+    margin-top: 25vw;
+}
+
+
+#page2{
+    height: 50vh;
+}
+
+#page2 h2{
+    font-size: 4vw;
+}
+
+#page2 p{
+    font-size: 2vw;
+}
+
+#page3{
+    height: 130vh;
+}
+
+#page3 .video-container{
+    width: 86%;
+    height: 60vh;
+    margin-left: 6vw;
+}
+
+#page3 h1{
+    font-size: 5.5vw;
+    margin-left: 8vw;
+    margin-bottom: 3vw;
+}
+
+#page3 h4{
+    font-size: 30vw;
+    margin-left: 12vw;
+}
+
+#page4{
+    margin-top: 18vw;
+}
+
+#picture{
+    width: 100%;
+    padding: 8vw;
+    display: block;
+    gap: 4vw;
+    background-color: #000;
+}
+
+#picture .pic{
+    width: 95%;
+    margin-bottom: 6vw;
+}
+
+#picture #img2{
+    width: 95%;
+}
+
+.footer-col {
+	width: 30%;
+	padding: 0 .1vw;
+}
+
+.footer-col h4 {
+	font-size: 3.3vw;
+}
+
+
+.footer-col  a {
+	font-size: 2vw;
+}
+
+.social-links i {
+	height: 6vw;
+	width: 6vw;
+    padding: 1.1vw 1vw;
+    font-size: 3.3vw;
+}
+.social-links{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
 
 }
