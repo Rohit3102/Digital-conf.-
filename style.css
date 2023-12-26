@@ -50,7 +50,7 @@ body{
 #page1{
     width: 100%;
     height: 100vh;
-    background-image: url(/bg.avif);
+    background-image: url(https://conference.awwwards.com/promotion-hero.jpg);
     background-position: center;
     background-size: cover;
 }
