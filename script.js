@@ -1,8 +1,28 @@
+
+const loader = document.querySelector("#loader")
+const main = document.querySelector("#main")
+
+let trl = gsap.timeline();
+trl.to(loader,{
+   opacity: 0,
+   delay: 3.5
+})
+trl.to(loader,{
+    y: "-100%",
+    duration: .1,
+})
+
+trl.to(main,{
+  display: "inline",
+  opacity: 1
+})
+
 var tl = gsap.timeline();
 
 function navpanomation(){
   tl.from(".nav h6",{
     y:100,
+    delay:4,
     opacity:0,
     stagger:.1
 });
@@ -83,4 +103,3 @@ h.forEach(function(val){
 //   }
  
 // })
-
