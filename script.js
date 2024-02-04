@@ -1,5 +1,6 @@
 
-const loader = document.querySelector("#loader")
+function load(){
+  const loader = document.querySelector("#loader")
 const main = document.querySelector("#main")
 
 let trl = gsap.timeline();
@@ -16,6 +17,9 @@ trl.to(main,{
   display: "inline",
   opacity: 1
 })
+}
+
+load();
 
 var tl = gsap.timeline();
 
@@ -34,8 +38,21 @@ tl.from(".center h1",{
     stagger:.3
 });
 
+gsap.to("#main .nav",{
+  scrollTrigger:{
+    trigger: "#main .nav",
+    scroller: "body",
+    // markers: true,
+    start: "bottom -7%",
+    scrub: true
+  },
+  backgroundColor:"black"
+})
+
 };
 navpanomation();
+
+
 
 
 function page3animation(){
@@ -67,7 +84,8 @@ function page3animation(){
 page3animation();
 
 
-var h = document.querySelectorAll("#page4 h1");
+function colorChange(){
+  var h = document.querySelectorAll("#page4 h1");
 
 h.forEach(function(val){
   
@@ -88,18 +106,6 @@ h.forEach(function(val){
 })
 
 
-// let btn = document.querySelector(".right-nav i")
-// let main = document.querySelector("#main")
-// let dark = 0
+}
 
-// btn.addEventListener("click", function(){
-//   if(dark === 0){
-//     main.style.backgroundColor = "black"
-//     h.style.color = "#fff"
-//     dark = 1
-//   }if(dark === 1){
-//     main.style.backgroundColor = "red"
-//      dark = 0
-//   }
- 
-// })
+colorChange()

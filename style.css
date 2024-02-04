@@ -35,6 +35,7 @@ body{
     top: 0;
     z-index: 999;
     color: #fff;
+    transition: all ease 1s;
 }
 
 .nav .left-nav{
